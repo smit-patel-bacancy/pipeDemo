@@ -5,6 +5,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+import { AsyncPipeDemoComponent } from './async-pipe-demo/async-pipe-demo.component';
 import { BuiltInPipesDemoComponent } from './built-in-pipes-demo/built-in-pipes-demo.component';
 import { CustomPipeDemoComponent } from './custom-pipe-demo/custom-pipe-demo.component';
 
@@ -16,6 +17,7 @@ import { FilterPipe } from './pipes/filter.pipe';
     BuiltInPipesDemoComponent,
     CustomPipeDemoComponent,
     FilterPipe,
+    AsyncPipeDemoComponent,
   ],
   imports: [
     BrowserModule,
