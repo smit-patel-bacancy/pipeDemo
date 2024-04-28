@@ -1,0 +1,29 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h2>Custom Pipe in Angular</h2>
+            <hr>
+            <h3>Filter Pipe</h3>
+
+            <hr>
+            Name : <input type="text" name="name" id="name" [(ngModel)]="name">
+            <br>
+            Type : <input type="text" name="type" id="type" [(ngModel)]="type">
+            <br>
+            <button class="btn btn-primary" (click)="onAddData()">Add into Array</button>
+
+            <hr>
+            <h4>Filtered List</h4>
+            <input type="text" name="filterType" id="filterType" [(ngModel)]="filterType">
+            <ul *ngFor="let data of arrayData | filter:filterType:'type' ">
+                <li>{{data.name}} --- {{data.type}}</li>
+            </ul>
+
+            <hr>
+            <h4>Original List</h4>
+            <ul *ngFor="let data of arrayData">
+                <li>{{data.name}} --- {{data.type}}</li>
+            </ul>
+        </div>
+    </div>
+</div>
